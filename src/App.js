@@ -1,23 +1,24 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route, Switch, NavLink, Link } from "react-router-dom";
+import classes from './App.scss';
+
+// import ExpenseDashboardPage from './ExpenseDashboard';
+
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        Hello world!!!
+        Hello
+        
       </div>
     );
   }
 }
 
-const ExpenseDashboardPage = () => <div>This is the dashboard</div>;
 
-const routes = (
-  <BrowserRouter>
-    <App />
-    <Route path="/" component={ExpenseDashboardPage} />
-  </BrowserRouter>
-);
+
+
+
 
 export default App;

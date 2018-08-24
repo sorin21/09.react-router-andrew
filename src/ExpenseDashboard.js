@@ -1,0 +1,1 @@
+const ExpenseDashboardPage = () => <div>This is the dashboard</div>;

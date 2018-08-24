@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -24,7 +25,7 @@ module.exports = {
               options: {
                 // sourceMap: true,
                 // importLoaders: 1,
-                localIdentName: "[name]__[local]__[hash:base64:5]"
+                // localIdentName: "[name]__[local]__[hash:base64:5]"
               }
             },
             // "postcss-loader"
@@ -73,6 +74,7 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
-    compress: isProduction ? true : false
+    compress: isProduction ? true : false,
+    // contentBase: path.join(__dirname, 'dist')
   },
 };
